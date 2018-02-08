@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/calculator.css">
+  <title>Calculadora Básica</title>
+</head>
+<body>
+
+  <h1>Calculadora básica</h1>
+  <h3>Ingrese un par de número separados por coma y luego oprima la operación que desea realizar</h3>
+
+  <div id="numbers">
+    <label>Números: </label>
+    <input  id="in-user" type="text" placeholder="x, y"/>
+  </div >
+
+  <div id="operations">
+    <button onclick="executeOperation('add')" id="addition"> + </button>
+    <button onclick="executeOperation('min')" id="minus"> - </button>
+    <button onclick="executeOperation('div')" id="division"> / </button>
+    <button onclick="executeOperation('multi')" id="multiplication"> * </button>
+    <button onclick="executeUnit('sqrt')" id="square"> √ </button>
+    <button onclick="executeUnit('div')" id="division-by-unit"> 1/x </button>
+  </div>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
